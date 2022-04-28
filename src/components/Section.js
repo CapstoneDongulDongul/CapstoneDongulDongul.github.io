@@ -1,6 +1,7 @@
 import ReactSpeedometer from 'react-d3-speedometer'
 
 function Section() {
+  let label0 = 'EXTREME \n FEAR'
   let state = 'Neutral '
   let value = 47.05
   let previousCloseStateText = 'Neutral'
@@ -13,19 +14,19 @@ function Section() {
   let yearState = 48
   return (
     <section class="text-gray-600 body-font">
-      <div class="container px-24 pt-16 mx-auto">
-        <h1 class="text-3xl font-bold title-font text-gray-900 mb-4 text-left">
+      <div class="container px-20 pt-14 mx-auto">
+        <h1 class="ml-4 text-3xl font-bold title-font text-gray-900 mb-4 text-left">
           Fear & Greed Index
         </h1>
-        <h4 class="text-l title-font text-gray-400 text-left">
+        <h4 class="ml-4 title-font text-gray-400 text-left">
           What emotion is driving the market now?
         </h4>
-        <h4 class="text-l title-font text-gray-400 text-left underline">
+        <h4 class="ml-4 title-font text-gray-400 text-left underline">
           Learn more about the Index
         </h4>
         <div class="flex flex-wrap ">
           <div class="py-8 md:w-1/2 w-full">
-            <div class="  rounded">
+            <div class="rounded">
               <ReactSpeedometer
                 minValue={0}
                 maxValue={100}
@@ -87,8 +88,8 @@ function Section() {
               </a>
             </div>
           </div>
-          <div class="py-4 px-24 md:w-1/2 w-full">
-            <div class=" px-8 rounded">
+          <div class=" pl-24 pr-4 md:w-1/2 w-full ">
+            <div class=" px-8 bg-gray-100 rounded">
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -98,62 +99,38 @@ function Section() {
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg> */}
               <div>
-                <p class="leading-relaxed text-gray-500 mb-4 text-left">
+                <p class="pt-4 text-lg leading-relaxed text-gray-500 mb-4 text-left">
                   previous close
                 </p>
-                <div class="grid grid-rows-3 grid-flow-col ">
-                  <div class="row-start-1 row-span-2 ml-8 title-font font-medium text-gray-900">
-                    {previousCloseStateText}
-                  </div>
-                  <div class="row-end-3 row-span-2 my-2.5">
-                    <div class=" border-t border-black"></div>
-                  </div>
-                  <div class="row-start-1 row-end-4 title-font font-medium text-gray-900">
-                    {previousCloseState}
-                  </div>
-                </div>
-                <p class="leading-relaxed text-gray-500 mb-4 text-left">
+                <p class="text-xl flex justify-start leading-relaxed text-gray-500 mb-4 ml-14 mr-4 text-left title-font font-medium text-gray-900">
+                  <div>{previousCloseStateText}</div>
+                  <div class=" border-t border-black grow my-4 ml-5"></div>
+                  <div class="text-xl ml-5">{previousCloseState}</div>
+                </p>
+                <p class="text-lg leading-relaxed text-gray-500 mb-4 text-left">
                   1 week ago
                 </p>
-                <div class="grid grid-rows-3 grid-flow-col gap-4">
-                  <div class="row-start-1 row-span-2 ml-8 title-font font-medium text-gray-900">
-                    {weekStateText}
-                  </div>
-                  <div class="row-end-3 row-span-2 my-2.5">
-                    <div class=" border-t border-black"></div>
-                  </div>
-                  <div class="row-start-1 row-end-4 title-font font-medium text-gray-900">
-                    {weekState}
-                  </div>
-                </div>
-                <p class="leading-relaxed text-gray-500 mb-4 text-left">
-                  1 month ago
+                <p class="text-xl flex justify-start leading-relaxed text-gray-500 mb-4 ml-14 mr-4 text-left title-font font-medium text-gray-900">
+                  <div>{weekStateText}</div>
+                  <div class=" border-t border-black grow my-4 ml-5"></div>
+                  <div class="text-xl ml-5">{weekState}</div>
                 </p>
-                <div class="grid grid-rows-3 grid-flow-col gap-4">
-                  <div class="row-start-1 row-span-2 ml-8 title-font font-medium text-gray-900">
-                    {monthStateText}
-                  </div>
-                  <div class="row-end-3 row-span-2 my-2.5">
-                    <div class=" border-t border-black"></div>
-                  </div>
-                  <div class="row-start-1 row-end-4 title-font font-medium text-gray-900">
-                    {monthState}
-                  </div>
-                </div>
-                <p class="leading-relaxed text-gray-500 mb-4 text-left">
-                  1 year ago
+                <p class="text-lg leading-relaxed text-gray-500 mb-4 text-left">
+                  previous close
                 </p>
-                <div class="grid grid-rows-3 grid-flow-col gap-4">
-                  <div class="row-start-1 row-span-2 ml-8 title-font font-medium text-gray-900">
-                    {yearStateText}
-                  </div>
-                  <div class="row-end-3 row-span-2 my-2.5">
-                    <div class=" border-t border-black"></div>
-                  </div>
-                  <div class="row-start-1 row-end-4 title-font font-medium text-gray-900">
-                    {yearState}
-                  </div>
-                </div>
+                <p class="text-xl flex justify-start leading-relaxed text-gray-500 mb-4 ml-14 mr-4 text-left title-font font-medium text-gray-900">
+                  <div>{previousCloseStateText}</div>
+                  <div class=" border-t border-black grow my-4 ml-5"></div>
+                  <div class="text-xl ml-5">{previousCloseState}</div>
+                </p>
+                <p class="text-lg leading-relaxed text-gray-500 mb-4 text-left">
+                  previous close
+                </p>
+                <p class="text-xl pb-4 flex justify-start leading-relaxed text-gray-500 mb-4 mr-4 ml-14 text-left title-font font-medium text-gray-900">
+                  <div>{previousCloseStateText}</div>
+                  <div class=" border-t border-black grow my-4 ml-5"></div>
+                  <div class="text-xl ml-5">{previousCloseState}</div>
+                </p>
               </div>
               {/* <a class="inline-flex">
                 <span class="flex-grow flex text-left  flex-col pl-4">

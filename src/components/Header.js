@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header class="text-white body-font">
-      <div class="bg-[#C2C2C2] container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div class="bg-[#C2C2C2] container mx-auto flex flex-wrap p-6 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium font-family: ui-monospace items-center mb-4 md:mb-2">
           <span class="ml-3 text-3xl">Donggul - Donggul</span>
         </a>
