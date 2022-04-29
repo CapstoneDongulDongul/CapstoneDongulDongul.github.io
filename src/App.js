@@ -3,13 +3,14 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Section from './components/Section'
-import ReactSpeedometer from 'react-d3-speedometer'
+import ChartPage from './components/ChartPage'
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Section />
+      <ChartPage />
       <Footer />
     </div>
   )
