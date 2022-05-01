@@ -6,7 +6,9 @@ function Footer() {
     <footer class="text-white body-font">
       <div class="bg-[#C2C2C2] container px-5 py-6 mx-auto ">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white ">
-          <span class="mt-4 ml-3 text-2xl">Donggul - Donggul</span>
+          <span class="font-['Quicksand'] mt-4 ml-3 text-2xl">
+            Donggul - Donggul
+          </span>
         </a>
         <div className="container mx-auto pt-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <a

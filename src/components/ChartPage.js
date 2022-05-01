@@ -4,7 +4,7 @@ import ApexChart from 'react-apexcharts'
 function ChartPage() {
   return (
     <section class="text-gray-600 body-font">
-      <div class="container px-20 pt-6 mx-auto ">
+      <div class="px-20 pt-6 mx-auto ">
         <div class="justify-center">
           <div class="flex justify-between shrink md: w-full ">
             <div class="flex justify-around ml-4 md:w-1/3 pt-2 pb-4 ">
@@ -63,7 +63,7 @@ function ChartPage() {
           </div>
         </div>
       </div>
-      <div class=" mb-10 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class="mt-10 ml-12 mr-12 border-t border-gray-700"></div>
     </section>
   )
 }

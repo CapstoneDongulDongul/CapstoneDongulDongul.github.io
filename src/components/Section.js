@@ -14,7 +14,7 @@ function Section() {
   let yearState = 48
   return (
     <section class="text-gray-600 body-font">
-      <div class="container px-20 pt-14 mx-auto">
+      <div class="px-20 pt-12 mx-auto">
         <h1 class="ml-4 text-3xl font-bold title-font text-gray-900 mb-4 text-left">
           Fear & Greed Index
         </h1>
