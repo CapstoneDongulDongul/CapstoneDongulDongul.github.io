@@ -24,7 +24,7 @@ function SearchPage() {
   return (
     <section class="text-gray-600 body-font">
       <div class="px-20 pt-6 pb-8 mx-auto ">
-        <div class="flex justify-center">
+        <div class="flex flex-wrap justify-center">
           <div class="basis-2/3">
             <div class="text-3xl font-bold title-font text-gray-900 text-left  ml-6">
               Today's Price
