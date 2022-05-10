@@ -2,16 +2,17 @@ import logo from './logo.svg'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Section from './components/Section'
+import IndexPage from './components/IndexPage'
 import ChartPage from './components/ChartPage'
 import CoinSites from './components/CoinSites'
 import SearchPage from './components/SearchPage'
+import { useState } from 'react'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Section />
+      <IndexPage />
       <ChartPage />
       <CoinSites />
       <SearchPage />
