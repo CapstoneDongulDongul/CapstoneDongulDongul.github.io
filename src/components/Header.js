@@ -1,13 +1,13 @@
 function Header() {
   return (
     <header class="text-white body-font">
-      <div class="bg-[#C2C2C2] container mx-auto flex flex-wrap p-6 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium font-family: ui-monospace items-center mb-4 md:mb-2">
-          <span class="font-['Quicksand'] ml-3 font-bold text-3xl">
+      <div class=" flex flex-wrap items-center flex-col md:flex-row p-6 bg-[#C2C2C2]">
+        <a class="flex  items-center mb-4 md:mb-2title-font font-medium font-family: ui-monospace">
+          <span class=" ml-3 font-['Quicksand'] font-bold text-3xl">
             Donggul - Donggul
           </span>
         </a>
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <nav class="flex flex-wrap items-center justify-center text-base  md:ml-auto ">
           <div class="mr-5 hover:text-gray-600 cursor-pointer ">
             Fear & Greed Index
           </div>
