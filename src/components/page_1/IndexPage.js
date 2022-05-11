@@ -1,9 +1,9 @@
 import Speedometer from './Speedometer'
-import ExtremeFear from '../svg/ExtremeFear.svg'
-import Fear from '../svg/Fear.svg'
-import Neutral from '../svg/Neutral.svg'
-import Greed from '../svg/Greed.svg'
-import ExtremeGreed from '../svg/ExtremeGreed.svg'
+import ExtremeFear from '../../svg/ExtremeFear.svg'
+import Fear from '../../svg/Fear.svg'
+import Neutral from '../../svg/Neutral.svg'
+import Greed from '../../svg/Greed.svg'
+import ExtremeGreed from '../../svg/ExtremeGreed.svg'
 import IndexPeriod from './Index_period'
 
 function Section() {
