@@ -33,7 +33,7 @@ function Section() {
           Learn more about the Index
         </h4>
         <div class="flex flex-wrap justify-center">
-          <div class="relative py-8 mt-4 bg-red-100">
+          <div class="relative py-8 mt-4">
             <div class="sm:hidden">
               <Speedometer
                 value={value}
@@ -101,7 +101,7 @@ function Section() {
             </div>
           </div>
           <div class="block xl:w-[2%]"></div>
-          <div class="sm:px-8 pt-6 sm:pt-0 pb-8 lg:w-[40%] sm:w-5/6 w-full">
+          <div class="sm:px-8 pt-4 pb-8 lg:w-[40%] sm:w-5/6 w-full">
             <div>
               <IndexPeriod
                 textPeriod="previous close"

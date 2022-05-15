@@ -1,33 +1,66 @@
 import TRAUM from '../svg/logo-dark.png'
-import Coinone from '../svg/Coinone.png'
-import { ReactComponent as HUFS } from '../svg/hufs.svg'
+import CoinMarketCap from '../svg/CoinMarketCap.png'
+import HUFS from '../svg/hufs.svg'
 
 function CoinSites() {
   return (
     <section class="text-gray-600 body-font">
       <div class="px-20 pt-0 mx-auto ">
-        <div class="flex justify-around py-10 pl-16 opacity-40">
-          <a href="https://www.hufs.ac.kr/">
-            <HUFS width="120" height="120" class="mt-1" />
-          </a>
-          <a href="https://www.trauminfotech.com/">
+        <div class="flex shrink justify-around opacity-40 py-4 md:py-16">
+          <div class="flex-col self-center w-1/3 ">
+            <a href="https://www.hufs.ac.kr/">
+              <img
+                class="m-auto lg:p-4 p-6 "
+                alt="HUFS"
+                width={150}
+                src={HUFS}
+              ></img>
+            </a>
+          </div>
+          <div class="flex-col self-center w-1/3 ">
+            <a href="https://www.trauminfotech.com/">
+              <img
+                class="m-auto mb-2 md:mb-4 md:p-2 p-4"
+                alt="Traum"
+                width={250}
+                src={TRAUM}
+              ></img>
+            </a>
+          </div>
+          <div class="flex-col self-center w-1/3 ">
+            <a href="https://coinmarketcap.com/ko/">
+              <img
+                class="m-auto"
+                alt="CoinMarketCap"
+                width={400}
+                src={CoinMarketCap}
+              ></img>
+            </a>
+          </div>
+          {/* <a href="https://www.hufs.ac.kr/" class=" w-1/3 ">
             <img
-              class="ml-8 mt-1"
+              class="m-auto my-6 md:my-8 xl:my-12"
+              alt="HUFS"
+              width={160}
+              src={HUFS}
+            ></img>
+          </a>
+          <a href="https://www.trauminfotech.com/" class="w-1/3 ">
+            <img
+              class="m-auto my-10 sm:my-12 md:my-12 xl:my-14"
               alt="Traum"
-              width={220}
-              height={100}
+              width={250}
               src={TRAUM}
             ></img>
           </a>
-          <a href="https://coinone.co.kr/">
+          <a href="https://coinmarketcap.com/ko/" class="w-1/3 ">
             <img
-              class="mt-7"
-              alt="Coinone"
-              width={310}
-              height={80}
-              src={Coinone}
+              class="m-auto my-12 sm:my-16 md:my-16 xl:my-12"
+              alt="CoinMarketCap"
+              width={400}
+              src={CoinMarketCap}
             ></img>
-          </a>
+          </a> */}
         </div>
       </div>
       <div class=" mb-10 ml-12 mr-12 border-t border-gray-700"></div>

@@ -5,7 +5,7 @@ function ChartPage() {
     <section class="text-gray-600 body-font">
       <div class="px-20 pt-6 mx-auto ">
         <div class="justify-center ">
-          <div class="flex flex-wrap justify-center sm:flex-row-reverse lg:justify-between lg:px-2 mb-2 ">
+          <div class="flex flex-wrap justify-center sm:flex-row-reverse md:justify-between lg:px-2 mb-2 ">
             <div class="whitespace-nowrap px-16 pb-4 text-3xl font-bold title-font text-gray-900 ">
               Index History
             </div>
@@ -16,12 +16,6 @@ function ChartPage() {
               </li>
               <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
                 2 week
-              </li>
-              <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
-                3 week
-              </li>
-              <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
-                month
               </li>
             </ul>
           </div>
@@ -41,10 +35,14 @@ function ChartPage() {
           </div>
           <div class="flex justify-center ">
             <div class="flex flex-nowrap shrink">
-              <div class="rounded-md self-center w-10 h-1.5 mb-3 bg-blue-700"></div>
-              <div class="ml-2 pt-4 pb-8 text-lg font-medium">UBMI</div>
-              <div class="rounded-md self-center w-10 h-1.5 ml-12 mb-3 bg-orange-400"></div>
-              <div class="ml-2 pt-4 pb-8 text-lg font-medium">Greed & Fear</div>
+              <div class="rounded-md self-center w-7 h-1 md:w-10 md:h-1.5 mb-3 bg-blue-700"></div>
+              <div class="ml-2 pt-4 pb-8 text-sm md:text-lg font-medium">
+                UBMI
+              </div>
+              <div class="rounded-md self-center w-7 h-1 ml-6 md:w-10 md:h-1.5 md:ml-12 mb-3 bg-orange-400"></div>
+              <div class="ml-2 pt-4 pb-8 text-sm md:text-lg font-medium">
+                Greed & Fear
+              </div>
             </div>
           </div>
         </div>
