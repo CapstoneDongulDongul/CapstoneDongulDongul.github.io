@@ -25,11 +25,22 @@ function ChartPage() {
               </li>
             </ul>
           </div>
-          <div class="flex justify-center pt-4 pr-8">
-            <Chart />
+          <div class="flex justify-center pt-4 pr-6">
+            <div class="md:hidden">
+              <Chart w={600} h={100} />
+            </div>
+            <div class="hidden md:block lg:hidden">
+              <Chart w={250} h={0} />
+            </div>
+            <div class="hidden lg:block xl:hidden">
+              <Chart w={0} h={10} />
+            </div>
+            <div class="hidden xl:block">
+              <Chart w={-150} h={0} />
+            </div>
           </div>
           <div class="flex justify-center ">
-            <div class="flex flex-wrap">
+            <div class="flex flex-nowrap shrink">
               <div class="rounded-md self-center w-10 h-1.5 mb-3 bg-blue-700"></div>
               <div class="ml-2 pt-4 pb-8 text-lg font-medium">UBMI</div>
               <div class="rounded-md self-center w-10 h-1.5 ml-12 mb-3 bg-orange-400"></div>

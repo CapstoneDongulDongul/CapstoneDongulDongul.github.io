@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 function App() {
   return (
-    <div className="App">
+    <div class="w-full overflow-x-hidden">
       <Header />
       <IndexPage />
       <ChartPage />

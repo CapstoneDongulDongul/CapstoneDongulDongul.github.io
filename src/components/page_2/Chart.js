@@ -1,11 +1,12 @@
 import ApexChart from 'react-apexcharts'
 
-function Chart() {
+function Chart(props) {
+  const { w, h } = props
   return (
     <ApexChart
       type="line"
-      height={400}
-      width={950}
+      height={400 - h}
+      width={950 - w}
       series={[
         {
           name: 'please',

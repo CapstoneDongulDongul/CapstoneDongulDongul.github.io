@@ -9,11 +9,11 @@ import IndexPeriod from './Index_period'
 function Section() {
   const currentDay = new Date()
 
-  let value = 47.05
+  let value = 47.05 //.00자리
   let state = 'Neutral '
   let previousCloseStateText = 'Neutral'
   let oneStateText = 'Fear'
-  let weekStateText = 'ExtremeFear'
+  let weekStateText = 'Extreme Greed'
   let tenStateText = 'Neutral'
   let previousCloseState = 47
   let weekState = 20
@@ -22,25 +22,86 @@ function Section() {
 
   return (
     <section class="text-gray-600 body-font">
-      <div class="px-20 pt-12 mx-auto ">
-        <h1 class="ml-4 mb-4 text-3xl font-bold title-font text-gray-900 text-left">
+      <div class="px-20 pt-12">
+        <h1 class="mb-4 text-3xl font-bold title-font text-gray-900 text-left">
           Fear & Greed Index
         </h1>
-        <h4 class="ml-4 text-left title-font text-gray-400 ">
+        <h4 class="text-left title-font text-gray-400 ">
           What emotion is driving the market now?
         </h4>
-        <h4 class="ml-4 text-left title-font text-gray-400 underline">
+        <h4 class="text-left title-font text-gray-400 underline">
           Learn more about the Index
         </h4>
         <div class="flex flex-wrap justify-center">
-          <div class="relative py-8 md:w-[94%] lg:w-[55%] w-full">
-            <Speedometer value={value} state={state} />
-            <div class="block absolute top-100 left-[270px] b-10 text-xl font-bold text-gray-400 ">
-              {value}
+          <div class="relative py-8 mt-4 bg-red-100">
+            <div class="sm:hidden">
+              <Speedometer
+                value={value}
+                state={state}
+                w={300}
+                h={155}
+                mini={50}
+                font={'6px'}
+              />
+              <div class="absolute left-[127px] text-xl font-bold text-gray-400 ">
+                {value}
+              </div>
+            </div>
+            <div class="hidden sm:block md:hidden">
+              <Speedometer
+                value={value}
+                state={state}
+                w={160}
+                h={80}
+                mini={0}
+                font={'10px'}
+              />
+              <div class="absolute left-[195px] text-xl font-bold text-gray-400 ">
+                {value}
+              </div>
+            </div>
+            <div class="hidden md:block lg:hidden">
+              <Speedometer
+                value={value}
+                state={state}
+                w={0}
+                h={0}
+                mini={0}
+                font={'15px'}
+              />
+              <div class="absolute left-[273px] text-xl font-bold text-gray-400 ">
+                {value}
+              </div>
+            </div>
+            <div class="hidden lg:block xl:hidden ">
+              <Speedometer
+                value={value}
+                state={state}
+                w={100}
+                h={44}
+                mini={0}
+                font={'13px'}
+              />
+              <div class="absolute left-[224px] text-xl font-bold text-gray-400 ">
+                {value}
+              </div>
+            </div>
+            <div class="hidden xl:block">
+              <Speedometer
+                value={value}
+                state={state}
+                w={0}
+                h={0}
+                mini={0}
+                font={'15px'}
+              />
+              <div class="absolute left-[273px] text-xl font-bold text-gray-400 ">
+                {value}
+              </div>
             </div>
           </div>
-          <div class="block lg:w-[2%]"></div>
-          <div class="px-8 pb-8 lg:w-[43%] w-5/6">
+          <div class="block xl:w-[2%]"></div>
+          <div class="sm:px-8 pt-6 sm:pt-0 pb-8 lg:w-[40%] sm:w-5/6 w-full">
             <div>
               <IndexPeriod
                 textPeriod="previous close"
