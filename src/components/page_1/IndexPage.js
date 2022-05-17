@@ -21,8 +21,8 @@ function Section() {
   let tenState = 48
 
   return (
-    <section class="text-gray-600 body-font">
-      <div class="px-20 pt-12">
+    <section id="1" class="text-gray-600 body-font">
+      <div class="px-20 pt-10">
         <h1 class="mb-4 text-3xl font-bold title-font text-gray-900 text-left">
           Fear & Greed Index
         </h1>
@@ -128,7 +128,7 @@ function Section() {
         </div>
       </div>
       <div class="pr-24 pb-4 text-sm text-right ">Last updated</div>
-      <div class=" mb-10 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class=" mt-2 mb-6 ml-12 mr-12 border-t border-gray-700"></div>
     </section>
   )
 }

@@ -47,8 +47,8 @@ function SearchPage() {
   ]
 
   return (
-    <section class="text-gray-600 body-font">
-      <div class="px-20 pt-6 pb-8">
+    <section id="3" class="text-gray-600 body-font">
+      <div class="px-20 pt-10 pb-6">
         <div class="flex flex-wrap items-center md:flex-nowrap  md:flex-row justify-center">
           <div class="w-11/12 md:w-2/3">
             <div class="ml-6 text-3xl font-bold title-font text-gray-900 text-left ">

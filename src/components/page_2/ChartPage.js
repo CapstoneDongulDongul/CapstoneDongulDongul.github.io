@@ -2,8 +2,8 @@ import Chart from './Chart'
 
 function ChartPage() {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="px-20 pt-6 mx-auto ">
+    <section id="2" class="text-gray-600 body-font">
+      <div class="px-20 pt-12 mx-auto ">
         <div class="justify-center ">
           <div class="flex flex-wrap justify-center sm:flex-row-reverse md:justify-between lg:px-2 mb-2 ">
             <div class="whitespace-nowrap px-16 pb-4 text-3xl font-bold title-font text-gray-900 ">
@@ -50,7 +50,7 @@ function ChartPage() {
           </div> */}
         </div>
       </div>
-      <div class="mt-14 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class="mt-16 mx-12 border-t border-gray-700"></div>
     </section>
   )
 }

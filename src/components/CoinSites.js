@@ -39,7 +39,7 @@ function CoinSites() {
           </div>
         </div>
       </div>
-      <div class="mb-10 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class="mb-6 ml-12 mr-12 border-t border-gray-700"></div>
     </section>
   )
 }
