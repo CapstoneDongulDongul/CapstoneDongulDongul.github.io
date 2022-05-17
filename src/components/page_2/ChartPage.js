@@ -20,34 +20,37 @@ function ChartPage() {
             </ul>
           </div>
           <div class="flex justify-center pt-4 pr-6">
-            <div class="md:hidden">
-              <Chart w={600} h={100} />
+            <div class="sm:hidden">
+              <Chart w={700} h={100} />
+            </div>
+            <div class="hidden sm:block md:hidden">
+              <Chart w={500} h={100} />
             </div>
             <div class="hidden md:block lg:hidden">
-              <Chart w={250} h={0} />
+              <Chart w={300} h={0} />
             </div>
             <div class="hidden lg:block xl:hidden">
-              <Chart w={0} h={10} />
+              <Chart w={100} h={10} />
             </div>
             <div class="hidden xl:block">
-              <Chart w={-150} h={0} />
+              <Chart w={-100} h={0} />
             </div>
           </div>
-          <div class="flex justify-center ">
+          {/* <div class="flex justify-center ">
             <div class="flex flex-nowrap shrink">
-              <div class="rounded-md self-center w-7 h-1 md:w-10 md:h-1.5 mb-3 bg-blue-700"></div>
+              <div class="rounded-md self-center w-7 h-1 md:w-10 md:h-1.5 mb-3 bg-indigo-600"></div>
               <div class="ml-2 pt-4 pb-8 text-sm md:text-lg font-medium">
-                UBMI
+                Coin Price
               </div>
               <div class="rounded-md self-center w-7 h-1 ml-6 md:w-10 md:h-1.5 md:ml-12 mb-3 bg-orange-400"></div>
               <div class="ml-2 pt-4 pb-8 text-sm md:text-lg font-medium">
                 Greed & Fear
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div class="mt-10 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class="mt-14 ml-12 mr-12 border-t border-gray-700"></div>
     </section>
   )
 }

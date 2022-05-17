@@ -37,33 +37,9 @@ function CoinSites() {
               ></img>
             </a>
           </div>
-          {/* <a href="https://www.hufs.ac.kr/" class=" w-1/3 ">
-            <img
-              class="m-auto my-6 md:my-8 xl:my-12"
-              alt="HUFS"
-              width={160}
-              src={HUFS}
-            ></img>
-          </a>
-          <a href="https://www.trauminfotech.com/" class="w-1/3 ">
-            <img
-              class="m-auto my-10 sm:my-12 md:my-12 xl:my-14"
-              alt="Traum"
-              width={250}
-              src={TRAUM}
-            ></img>
-          </a>
-          <a href="https://coinmarketcap.com/ko/" class="w-1/3 ">
-            <img
-              class="m-auto my-12 sm:my-16 md:my-16 xl:my-12"
-              alt="CoinMarketCap"
-              width={400}
-              src={CoinMarketCap}
-            ></img>
-          </a> */}
         </div>
       </div>
-      <div class=" mb-10 ml-12 mr-12 border-t border-gray-700"></div>
+      <div class="mb-10 ml-12 mr-12 border-t border-gray-700"></div>
     </section>
   )
 }

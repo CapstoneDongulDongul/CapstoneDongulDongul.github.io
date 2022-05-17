@@ -11,8 +11,8 @@ function Header() {
           <div class="mr-5 hover:text-gray-600 cursor-pointer ">
             Fear & Greed Index
           </div>
-          <a class="mr-5 hover:text-gray-600 cursor-pointer">Overview Chart</a>
-          <a class="mr-5 hover:text-gray-600 cursor-pointer">Search</a>
+          <a class="mr-5 hover:text-gray-600 cursor-pointer">Index History</a>
+          <a class="mr-5 hover:text-gray-600 cursor-pointer">Today's Price</a>
         </nav>
       </div>
     </header>

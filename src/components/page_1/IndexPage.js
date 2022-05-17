@@ -101,7 +101,7 @@ function Section() {
             </div>
           </div>
           <div class="block xl:w-[2%]"></div>
-          <div class="sm:px-8 pt-4 pb-8 lg:w-[40%] sm:w-5/6 w-full">
+          <div class="sm:px-8 pt-4 pb-8 lg:w-[40%] mobile:w-5/6 w-full">
             <div>
               <IndexPeriod
                 textPeriod="previous close"
