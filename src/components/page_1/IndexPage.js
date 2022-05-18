@@ -10,15 +10,41 @@ function Section() {
   const currentDay = new Date()
 
   let value = 47.05 //.00자리
-  let state = 'Neutral '
-  let previousCloseStateText = 'Neutral'
-  let oneStateText = 'Fear'
-  let weekStateText = 'Extreme Greed'
-  let tenStateText = 'Neutral'
+  let state = ''
+  let previousCloseStateText = ''
+  let oneStateText = ''
+  let weekStateText = ''
+  let tenStateText = ''
+
+  function getState(value) {
+    if (value > 0) {
+      state = 'Extreme Fear'
+      if (value > 20) {
+        state = 'Fear'
+        if (value > 40) {
+          state = 'Neutral'
+          if (value > 60) {
+            state = 'Greed'
+            if (value > 80) {
+              state = 'Extreme Greed'
+            }
+          }
+        }
+      }
+    }
+    return state
+  }
+  state = getState(value)
+
   let previousCloseState = 47
   let weekState = 20
   let oneState = 25
   let tenState = 48
+
+  previousCloseStateText = getState(previousCloseState)
+  oneStateText = getState(oneState)
+  weekStateText = getState(weekState)
+  tenStateText = getState(tenState)
 
   return (
     <section id="1" class="text-gray-600 body-font">
@@ -109,17 +135,17 @@ function Section() {
                 State={previousCloseState}
               />
               <IndexPeriod
-                textPeriod="1day ago"
+                textPeriod="1 day ago"
                 StateText={oneStateText}
                 State={oneState}
               />
               <IndexPeriod
-                textPeriod="7 day ago"
+                textPeriod="7 days ago"
                 StateText={weekStateText}
                 State={weekState}
               />
               <IndexPeriod
-                textPeriod="10 day ago"
+                textPeriod="10 days ago"
                 StateText={tenStateText}
                 State={tenState}
               />
