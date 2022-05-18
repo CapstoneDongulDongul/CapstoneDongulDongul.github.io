@@ -47,30 +47,38 @@ function SearchPage() {
   ]
 
   return (
-    <section class="text-gray-600 body-font">
-      <div class="px-20 pt-6 pb-8">
-        <div class="flex flex-wrap justify-center">
-          <div class="basis-2/3">
+    <section id="3" class="text-gray-600 body-font">
+      <div class="px-20 pt-10 pb-6">
+        <div class="flex flex-wrap items-center md:flex-nowrap  md:flex-row justify-center">
+          <div class="w-11/12 md:w-2/3">
             <div class="ml-6 text-3xl font-bold title-font text-gray-900 text-left ">
               Today's Price
             </div>
             <SearchBar />
-            <div class="flex pl-6 pb-1">
-              <div class="text-[#959595] ml-6  ">Coin</div>
-              <div class="text-[#959595] ml-48  ">price</div>
-              <div class="flex ml-60">
-                <img
-                  class="w-[1.2rem] h-[0.8rem] mt-1.5"
-                  alt="Up"
-                  src={up}
-                ></img>
-                <img
-                  class="w-[1.2rem] h-[0.8rem] mt-1.5"
-                  alt="Down"
-                  src={down}
-                ></img>
+            <div class="flex items-center pr-3">
+              <div class="text-[11px] mobile:text-base basis-[30%] text-[#959595] text-left ml-12 ">
+                Coin
               </div>
-              <div class="text-[#959595] ml-14  ">index</div>
+              <div class="text-[11px] mobile:text-base basis-[37%] text-[#959595] text-left ">
+                price
+              </div>
+              <div class="basis-[13%] ">
+                <div class="flex">
+                  <img
+                    class="w-[0.6rem] h-[0.4rem] mobile:w-[1.0rem] mobile:h-[0.6rem] mt-1.5"
+                    alt="Up"
+                    src={up}
+                  ></img>
+                  <img
+                    class="w-[0.6rem] h-[0.4rem] mobile:w-[1.0rem] mobile:h-[0.6rem] mt-1.5"
+                    alt="Down"
+                    src={down}
+                  ></img>
+                </div>
+              </div>
+              <div class="text-[11px] mobile:text-base basis-[10%] text-[#959595] text-center">
+                index
+              </div>
             </div>
             <div class="pb-4 mt-2 ml-2 mr-4 border-t border-gray-500"></div>
             <CoinItem
@@ -104,7 +112,7 @@ function SearchPage() {
               index={index}
             />
           </div>
-          <div class="basis-1/3">
+          <div class="w-full md:w-auto lg:w-1/3 md:my-0 mt-4">
             <Card title={'Trending'} img={Trending} List={TrendingList} />
             <Card title={'Greed'} img={Greed} List={GreedList} />
             <Card title={'Fear'} img={Fear} List={FearList} />
