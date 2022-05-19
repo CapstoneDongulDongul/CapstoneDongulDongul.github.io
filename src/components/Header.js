@@ -1,18 +1,36 @@
+import Link from 'react-scroll/modules/components/Link'
+
 function Header() {
+  function reload() {
+    window.location.reload()
+  }
   return (
-    <header class="text-white body-font">
+    <header id="head" class="text-white body-font">
       <div class=" flex flex-wrap items-center flex-col md:flex-row p-6 bg-[#C2C2C2]">
-        <a class="flex  items-center mb-4 md:mb-2title-font font-medium font-family: ui-monospace">
-          <span class=" ml-3 font-['Quicksand'] font-bold text-3xl">
+        <div
+          onClick={() => reload()}
+          class="flex items-center mb-4 md:mb-2 title-font font-medium font-family: ui-monospace cursor-pointer"
+        >
+          <span class="ml-3 font-['Quicksand'] font-bold text-3xl">
             Donggul - Donggul
           </span>
-        </a>
-        <nav class="flex flex-wrap items-center justify-center text-base  md:ml-auto ">
-          <div class="mr-5 hover:text-gray-600 cursor-pointer ">
-            Fear & Greed Index
-          </div>
-          <a class="mr-5 hover:text-gray-600 cursor-pointer">Overview Chart</a>
-          <a class="mr-5 hover:text-gray-600 cursor-pointer">Search</a>
+        </div>
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
+          <Link to="1" spy={true} smooth={true}>
+            <div class="mr-5 hover:text-gray-600 cursor-pointer ">
+              Fear & Greed Index
+            </div>
+          </Link>
+          <Link to="2" spy={true} smooth={true}>
+            <div class="mr-5 hover:text-gray-600 cursor-pointer">
+              Index History
+            </div>
+          </Link>
+          <Link to="3" spy={true} smooth={true}>
+            <div class="mr-5 hover:text-gray-600 cursor-pointer">
+              Today's Price
+            </div>
+          </Link>
         </nav>
       </div>
     </header>
