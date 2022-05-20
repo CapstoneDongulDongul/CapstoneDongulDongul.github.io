@@ -9,7 +9,7 @@ function Chart(props) {
       width={950 - w}
       series={[
         {
-          name: 'Coin Price',
+          name: 'Predict Price',
           data: [
             10, 41, 23, 35, 51, 49, 62, 69, 43, 91, 48, 33, 45, 15, 23, 3, 32,
             15, 54, 23, 63, 55, 45, 12, 25, 13, 132, 35, 46, 52, 6, 116,

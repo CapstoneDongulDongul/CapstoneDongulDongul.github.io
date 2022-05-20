@@ -3,15 +3,15 @@ function CoinItem({ coinName, price, upDown, index }) {
   let percent = ''
   function coinCondition(value) {
     if (value > 0) {
-      condition = 'w-2 h-14 bg-red-500 rounded-l mr-2 mobile:mr-6 ' //Extreme Fear
+      condition = 'w-2 h-16 bg-red-500 rounded-l mr-2 mobile:mr-6 ' //Extreme Fear
       if (value > 20) {
-        condition = 'w-2 h-14 bg-orange-400 rounded-l mr-2 mobile:mr-6' //Fear
+        condition = 'w-2 h-16 bg-orange-400 rounded-l mr-2 mobile:mr-6' //Fear
         if (value > 40) {
-          condition = 'w-2 h-14 bg-yellow-300 rounded-l mr-2 mobile:mr-6' //Neutral
+          condition = 'w-2 h-16 bg-yellow-300 rounded-l mr-2 mobile:mr-6' //Neutral
           if (value > 60) {
-            condition = 'w-2 h-14 bg-lime-400 rounded-l mr-2 mobile:mr-6' //Greed
+            condition = 'w-2 h-16 bg-lime-400 rounded-l mr-2 mobile:mr-6' //Greed
             if (value > 80) {
-              condition = 'w-2 h-14 bg-green-600 rounded-l mr-2 mobile:mr-6' //Extreme Greed
+              condition = 'w-2 h-16 bg-green-600 rounded-l mr-2 mobile:mr-6' //Extreme Greed
             }
           }
         }

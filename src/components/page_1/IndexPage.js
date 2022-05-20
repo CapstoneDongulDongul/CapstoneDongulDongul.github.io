@@ -48,7 +48,7 @@ function Section() {
 
   return (
     <section id="1" class="text-gray-600 body-font">
-      <div class="px-20 pt-10">
+      <div class="px-20 pt-6">
         <h1 class="mb-4 text-3xl font-bold title-font text-gray-900 text-left">
           Fear & Greed Index
         </h1>
@@ -56,7 +56,8 @@ function Section() {
           What emotion is driving the market now?
         </h4>
         <h4 class="text-left title-font text-gray-400 underline">
-          Learn more about the Index
+          Greed means that the price of BitCoin will rise.
+          <br /> Fear means that the price of Bitcoin will fall.
         </h4>
         <div class="flex flex-wrap justify-center">
           <div class="relative py-8 mt-4">
