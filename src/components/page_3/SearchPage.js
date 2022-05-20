@@ -80,7 +80,7 @@ function SearchPage() {
                 index
               </div>
             </div>
-            <div class="pb-4 mt-2 ml-2 mr-4 border-t border-gray-500"></div>
+            <div class="pb-6 mt-4 ml-2 mr-4 border-t border-gray-500"></div>
             <CoinItem
               coinName={coin1.coinName}
               price={coin1.price}
