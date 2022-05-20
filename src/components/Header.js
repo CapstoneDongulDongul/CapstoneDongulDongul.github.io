@@ -6,7 +6,7 @@ function Header() {
   }
   return (
     <header id="head" class="text-white body-font">
-      <div class=" flex flex-wrap items-center flex-col md:flex-row p-6 bg-[#C2C2C2]">
+      <div class=" flex flex-wrap items-center flex-col md:flex-row p-6 bg-[#C2C2C2] mb-6">
         <div
           onClick={() => reload()}
           class="flex items-center mb-4 md:mb-2 title-font font-medium font-family: ui-monospace cursor-pointer"
@@ -23,7 +23,7 @@ function Header() {
           </Link>
           <Link to="2" spy={true} smooth={true}>
             <div class="mr-5 hover:text-gray-600 cursor-pointer">
-              Index History
+              Price History
             </div>
           </Link>
           <Link to="3" spy={true} smooth={true}>

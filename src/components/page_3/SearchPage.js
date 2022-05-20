@@ -49,13 +49,13 @@ function SearchPage() {
   return (
     <section id="3" class="text-gray-600 body-font">
       <div class="px-20 pt-10 pb-6">
-        <div class="flex flex-wrap items-center md:flex-nowrap  md:flex-row justify-center">
-          <div class="w-11/12 md:w-2/3">
+        <div class="flex flex-wrap items-center md:flex-nowrap md:flex-row justify-center ">
+          <div class="w-11/12 md:w-2/3 ">
             <div class="ml-6 text-3xl font-bold title-font text-gray-900 text-left ">
               Today's Price
             </div>
-            <SearchBar />
-            <div class="flex items-center pr-3">
+            {/* <SearchBar /> */}
+            <div class="flex items-center pr-3 mt-10">
               <div class="text-[11px] mobile:text-base basis-[30%] text-[#959595] text-left ml-12 ">
                 Coin
               </div>

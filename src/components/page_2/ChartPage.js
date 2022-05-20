@@ -7,13 +7,13 @@ function ChartPage() {
         <div class="justify-center ">
           <div class="flex flex-wrap justify-center sm:flex-row-reverse md:justify-between lg:px-2 mb-2 ">
             <div class="whitespace-nowrap px-16 pb-4 text-3xl font-bold title-font text-gray-900 ">
-              Index History
+              Price History
             </div>
             <ul class="flex justify-around shrink-0 px-4 pt-2 pb-4 ">
               <li class="ml-2 mr-0.5 my-1">period</li>
-              <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
+              {/* <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
                 1 week
-              </li>
+              </li> */}
               <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
                 2 week
               </li>
