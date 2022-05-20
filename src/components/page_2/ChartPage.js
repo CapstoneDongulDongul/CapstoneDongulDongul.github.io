@@ -1,6 +1,15 @@
 import Chart from './Chart'
+import { useState } from 'react'
 
 function ChartPage() {
+  const [week, setWeek] = useState(2)
+  const click_1week = () => {
+    setWeek(1)
+  }
+  const click_2week = () => {
+    setWeek(2)
+  }
+
   return (
     <section id="2" class="text-gray-600 body-font">
       <div class="px-20 pt-12 mx-auto ">
@@ -11,29 +20,35 @@ function ChartPage() {
             </div>
             <ul class="flex justify-around shrink-0 px-4 pt-2 pb-4 ">
               <li class="ml-2 mr-0.5 my-1">period</li>
-              {/* <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
+              <li
+                onClick={click_1week}
+                class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer"
+              >
                 1 week
-              </li> */}
-              <li class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer">
+              </li>
+              <li
+                onClick={click_2week}
+                class="rounded-md mx-2 mt-1 mb-0.5 px-1.5 bg-[#C4C4C4] hover:bg-gray-200 hover:cursor-pointer"
+              >
                 2 week
               </li>
             </ul>
           </div>
           <div class="flex justify-center pt-4 pr-6">
             <div class="sm:hidden">
-              <Chart w={700} h={100} />
+              <Chart w={700} h={100} week={week} />
             </div>
             <div class="hidden sm:block md:hidden">
-              <Chart w={500} h={100} />
+              <Chart w={500} h={100} week={week} />
             </div>
             <div class="hidden md:block lg:hidden">
-              <Chart w={300} h={0} />
+              <Chart w={300} h={0} week={week} />
             </div>
             <div class="hidden lg:block xl:hidden">
-              <Chart w={100} h={10} />
+              <Chart w={100} h={10} week={week} />
             </div>
             <div class="hidden xl:block">
-              <Chart w={-100} h={0} />
+              <Chart w={-100} h={0} week={week} />
             </div>
           </div>
           {/* <div class="flex justify-center ">
