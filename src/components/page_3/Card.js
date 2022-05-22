@@ -1,6 +1,14 @@
 function Card(props) {
   const { title, img, List } = props
+  let temp = []
+  let temp2 = []
 
+  for (let i = 0; i < List.length; i++) {
+    temp.push(List[i][0])
+  }
+  for (let i = 0; i < List.length; i++) {
+    temp2.push(List[i][1])
+  }
   return (
     <div class="my-2 mx-4 py-4 px-4 shadow-lg rounded-lg">
       <div class="flex items-center pb-3">
@@ -12,20 +20,20 @@ function Card(props) {
       <div class="flex pb-2 text-[0.7rem] mobile:text-base ">
         <div class="pl-1 text-gray-400">1</div>
         {/* <div class="pl-3">coin image</div> */}
-        <div class="pl-3 font-semibold ">{List[0]}</div>
-        <div class="pl-3 text-gray-400 ">{List[1]}</div>
+        <div class="pl-3 font-semibold ">{temp[0]}</div>
+        <div class="pl-3 text-gray-400 ">{temp2[0]}</div>
       </div>
       <div class="flex pb-2 text-[0.7rem] mobile:text-base ">
         <div class="pl-1 text-gray-400">2</div>
         {/* <div class="pl-3">coin image</div> */}
-        <div class="pl-3 font-semibold">{List[2]}</div>
-        <div class="pl-3 text-gray-400">{List[3]}</div>
+        <div class="pl-3 font-semibold">{temp[1]}</div>
+        <div class="pl-3 text-gray-400">{temp2[1]}</div>
       </div>
       <div class="flex text-[0.7rem] mobile:text-base ">
         <div class="pl-1 text-gray-400">3</div>
         {/* <div class="pl-3">coin image</div> */}
-        <div class="pl-3 font-semibold">{List[4]}</div>
-        <div class="pl-3 text-gray-400">{List[5]}</div>
+        <div class="pl-3 font-semibold">{temp[2]}</div>
+        <div class="pl-3 text-gray-400">{temp2[2]}</div>
       </div>
     </div>
   )
