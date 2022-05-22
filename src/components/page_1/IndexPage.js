@@ -15,7 +15,7 @@ function Section() {
   const [cost, setCost] = useState({})
 
   const fetchTName = async () => {
-    const data = await fetch('http://localhost:5000/spd')
+    const data = await fetch('https://e789-220-120-112-2.jp.ngrok.io/spd')
     const co = await data.json()
     const temp = {
       t_v: co.t_v[0],

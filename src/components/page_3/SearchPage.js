@@ -24,7 +24,7 @@ function SearchPage() {
 
   useLayoutEffect(() => {
     const fetchTName = async () => {
-      const data = await fetch('http://localhost:5000/rank')
+      const data = await fetch('https://e789-220-120-112-2.jp.ngrok.io/rank')
       const coins = await data.json()
 
       const temp = {

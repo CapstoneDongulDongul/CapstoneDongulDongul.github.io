@@ -9,7 +9,7 @@ function Chart(props) {
   const [graph, setGraph] = useState({})
 
   const fetchGraph = async () => {
-    const data = await fetch('http://localhost:5000/chart')
+    const data = await fetch('https://e789-220-120-112-2.jp.ngrok.io/chart')
     const gp = await data.json()
     const temp = {
       normal_close: gp.normal,
