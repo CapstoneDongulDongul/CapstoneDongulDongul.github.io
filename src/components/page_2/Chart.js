@@ -1,6 +1,24 @@
 import ApexChart from 'react-apexcharts'
+import { useEffect, useState } from 'react'
 
 function Chart(props) {
+  useEffect(() => {
+    fetchGraph()
+  }, [])
+
+  const [graph, setGraph] = useState({})
+
+  const fetchGraph = async () => {
+    const data = await fetch('http://localhost:5000/chart')
+    const gp = await data.json()
+    const temp = {
+      normal_close: gp.normal,
+      predict_close: gp.predict,
+      date: gp.date,
+    }
+    setGraph(temp)
+  }
+
   const { w, h, week } = props
   if (week === 1) {
     return (
@@ -11,12 +29,12 @@ function Chart(props) {
         series={[
           {
             name: 'Predict Price',
-            data: [10, 41, 23, 35, 51, 49, 62],
+            data: graph.predict_close.slice(0, 7),
             color: '#4F46E5',
           },
           {
-            name: 'Greed & Fear',
-            data: [0, 4, 2, 5, 1, 9, 2],
+            name: 'Coin Price',
+            data: graph.normal_close.slice(0, 7),
             color: '#fb923c',
           },
         ]}
@@ -32,6 +50,9 @@ function Chart(props) {
             // },
             background: 'transparent',
           },
+          xaxis: {
+            categories: graph.date.slice(0, 7),
+          },
         }}
       />
     )
@@ -44,12 +65,12 @@ function Chart(props) {
       series={[
         {
           name: 'Predict Price',
-          data: [10, 41, 23, 35, 51, 49, 62, 69, 43, 91, 48, 33, 45, 15],
+          data: graph.predict_close,
           color: '#4F46E5',
         },
         {
-          name: 'Greed & Fear',
-          data: [0, 4, 2, 5, 1, 9, 2, 9, 3, 1, 8, 3, 5, 5],
+          name: 'Coin Price',
+          data: graph.normal_close,
           color: '#fb923c',
         },
       ]}
@@ -64,6 +85,9 @@ function Chart(props) {
           //   show: false,
           // },
           background: 'transparent',
+        },
+        xaxis: {
+          categories: graph.date,
         },
       }}
     />
