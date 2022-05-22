@@ -5,9 +5,26 @@ import Neutral from '../../svg/Neutral.svg'
 import Greed from '../../svg/Greed.svg'
 import ExtremeGreed from '../../svg/ExtremeGreed.svg'
 import IndexPeriod from './Index_period'
+import { useEffect, useState } from 'react'
 
 function Section() {
-  const currentDay = new Date()
+  useEffect(() => {
+    fetchTName()
+  }, [])
+
+  const [cost, setCost] = useState({})
+
+  const fetchTName = async () => {
+    const data = await fetch('http://localhost:5000/spd')
+    const co = await data.json()
+    const temp = {
+      t_v: co.t_v[0],
+      a_d: co.a_d[0],
+      a_w: co.a_w[0],
+      t_d: co.t_d[0],
+    }
+    setCost(temp)
+  }
 
   let value = 47.05 //.00자리
   let state = ''
@@ -17,34 +34,31 @@ function Section() {
   let tenStateText = ''
 
   function getState(value) {
-    if (value > 0) {
+    if (value < -100) {
       state = 'Extreme Fear'
-      if (value > 20) {
-        state = 'Fear'
-        if (value > 40) {
-          state = 'Neutral'
-          if (value > 60) {
-            state = 'Greed'
-            if (value > 80) {
-              state = 'Extreme Greed'
-            }
-          }
-        }
-      }
+    } else if (value >= -100 && value < -50) {
+      state = 'Fear'
+    } else if (value >= -50 && value < 0) {
+      state = 'Neutral'
+    } else if (value >= 0 && value < 50) {
+      state = 'Greed'
+    } else {
+      state = 'Extreme Greed'
     }
     return state
   }
-  state = getState(value)
 
-  let previousCloseState = 47
-  let weekState = 20
-  let oneState = 25
-  let tenState = 48
+  value = parseInt(cost.t_v)
+  let previousCloseState = parseInt(cost.t_v)
+  let weekState = parseInt(cost.a_w)
+  let oneState = parseInt(cost.a_d)
+  let tenState = parseInt(cost.t_d)
 
   previousCloseStateText = getState(previousCloseState)
   oneStateText = getState(oneState)
   weekStateText = getState(weekState)
   tenStateText = getState(tenState)
+  state = getState(value)
 
   return (
     <section id="1" class="text-gray-600 body-font">

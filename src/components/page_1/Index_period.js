@@ -3,22 +3,19 @@ function IndexPeriod(props) {
   let condition = '' //5 level
 
   function getCondition(value) {
-    if (value > 0) {
+    if (value < -100) {
       condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-ExtremeFear' //Extreme Fear
-      if (value > 20) {
-        condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Fear' //Fear
-        if (value > 40) {
-          condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Neutral' //Neutral
-          if (value > 60) {
-            condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Greed' //Greed
-            if (value > 80) {
-              condition =
-                'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-ExtremeGreed' //Extreme Greed
-            }
-          }
-        }
-      }
+    } else if (value >= -100 && value < -50) {
+      condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Fear' //Fear
+    } else if (value >= -50 && value < 0) {
+      condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Neutral' //Neutral
+    } else if (value >= 0 && value < 50) {
+      condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Greed' //Greed
+    } else {
+      condition =
+        'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-ExtremeGreed' //Extreme Greed
     }
+
     return condition
   }
   return (
