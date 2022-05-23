@@ -4,16 +4,15 @@ function IndexPeriod(props) {
 
   function getCondition(value) {
     if (value > 0) {
-      condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-ExtremeFear' //Extreme Fear
+      condition = 'w-[62px] h-[62px] pt-4 text-center bg-ExtremeFear' //Extreme Fear
       if (value > 20) {
-        condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Fear' //Fear
+        condition = 'w-[62px] h-[62px] pt-4 text-center bg-Fear' //Fear
         if (value > 40) {
-          condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Neutral' //Neutral
+          condition = 'w-[62px] h-[62px] pt-4 text-center bg-Neutral' //Neutral
           if (value > 60) {
-            condition = 'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-Greed' //Greed
+            condition = 'w-[62px] h-[62px] pt-4 text-center bg-Greed' //Greed
             if (value > 80) {
-              condition =
-                'w-[62px] h-[62px] pt-4 pl-[21px] sm:pl-[19px] bg-ExtremeGreed' //Extreme Greed
+              condition = 'w-[62px] h-[62px] pt-4 text-center bg-ExtremeGreed' //Extreme Greed
             }
           }
         }
