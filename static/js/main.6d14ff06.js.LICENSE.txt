@@ -1,10 +1,8 @@
 /*!
- * ApexCharts v3.35.2
+ * ApexCharts v3.35.0
  * (c) 2018-2022 ApexCharts
  * Released under the MIT License.
  */
-
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /*! svg.draggable.js - v2.2.2 - 2019-01-08
 * https://github.com/svgdotjs/svg.draggable.js
