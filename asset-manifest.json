@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.94c16561.css",
-    "main.js": "/static/js/main.a7999a1e.js",
+    "main.css": "/static/css/main.4a5728bd.css",
+    "main.js": "/static/js/main.ec05116d.js",
     "static/js/787.633816a4.chunk.js": "/static/js/787.633816a4.chunk.js",
-    "static/media/emoji 1.svg": "/static/media/emoji 1.4412368f6266d190385723ee56bed9ce.svg",
-    "static/media/hufs.svg": "/static/media/hufs.a37602f2e02d65814ad7ddf04457d4f1.svg",
+    "static/media/emoji 1.svg": "/static/media/emoji 1.5dfdc2cc8d6f03dbb1b721bdbdbc851d.svg",
+    "static/media/hufs.svg": "/static/media/hufs.6e965516861baa5c9bdd4b2868bf1699.svg",
     "static/media/logo-dark.png": "/static/media/logo-dark.122f8efcb91acbc0dbe6.png",
     "static/media/CoinMarketCap.png": "/static/media/CoinMarketCap.af1900b99485256d57c6.png",
-    "static/media/greed 1.svg": "/static/media/greed 1.d2c78fd51c1c1207d8e037444c0c46a0.svg",
+    "static/media/greed 1.svg": "/static/media/greed 1.de60293a9864f6ac7e8b38eb239ff4b2.svg",
     "static/media/fire.png": "/static/media/fire.c141b2917b488932bfa0.png",
     "index.html": "/index.html",
-    "static/media/ExtremeGreed.svg": "/static/media/ExtremeGreed.1a095c6e5748d2c3f5ba93fb3914891e.svg",
-    "static/media/Neutral.svg": "/static/media/Neutral.b8740c6abf53465e5aff29a69415386e.svg",
-    "static/media/ExtremeFear.svg": "/static/media/ExtremeFear.9dc7137a8db5dcc0411fd865c35e750a.svg",
-    "static/media/Fear.svg": "/static/media/Fear.8fb5a5c3f5ee2d9b8aefbacbddc742e1.svg",
-    "static/media/Greed.svg": "/static/media/Greed.fe799b2f3725d975f1b14992192838cd.svg",
-    "static/media/Vector 2.svg": "/static/media/Vector 2.156e8e75fad55781a076f1124ab25459.svg",
-    "static/media/Vector 168.svg": "/static/media/Vector 168.ab0f41c40b2f33f7c34f826d4018dfd8.svg",
-    "main.94c16561.css.map": "/static/css/main.94c16561.css.map",
-    "main.a7999a1e.js.map": "/static/js/main.a7999a1e.js.map",
+    "static/media/ExtremeGreed.svg": "/static/media/ExtremeGreed.ea09a194d55efc641542054c3b04246d.svg",
+    "static/media/Neutral.svg": "/static/media/Neutral.723650db2b92280255b68a625d074fff.svg",
+    "static/media/ExtremeFear.svg": "/static/media/ExtremeFear.28730af5fa77d52082e971219f5484ef.svg",
+    "static/media/Fear.svg": "/static/media/Fear.7982b299b4f1bfd2bce51dee28a717f0.svg",
+    "static/media/Greed.svg": "/static/media/Greed.bb551f427d17a7a3be8ef4af73a6293b.svg",
+    "static/media/Vector 2.svg": "/static/media/Vector 2.a699b0140ef4a2a85444df179623cc64.svg",
+    "static/media/Vector 168.svg": "/static/media/Vector 168.84fd5fc280c8da640eaff9abc979d843.svg",
+    "main.4a5728bd.css.map": "/static/css/main.4a5728bd.css.map",
+    "main.ec05116d.js.map": "/static/js/main.ec05116d.js.map",
     "787.633816a4.chunk.js.map": "/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94c16561.css",
-    "static/js/main.a7999a1e.js"
+    "static/css/main.4a5728bd.css",
+    "static/js/main.ec05116d.js"
   ]
 }
